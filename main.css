@@ -1,0 +1,77 @@
+.form-inline {  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+  }
+  
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    /* background-color: #fff; */
+    border: 1px solid #ddd;
+  }
+  
+  .break {
+    flex-basis: 100%;
+    width: 0;
+  }
+  
+  
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+    
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  
+  @media
+  only screen and (max-width: 900px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      display: block;
+    }
+    tr { border: 5px solid #ccc; margin-bottom : 10px; }
+    td {
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 200px;
+      margin-left: 150px;
+      display: block;
+    }
+    td:before {
+      position: absolute;
+      top: 12px;
+      left: 6px;
+      width: 200px;
+      padding-right: 40px;
+      white-space: nowrap;
+      margin-left: -150px;
+      display: block;
+    }
+    td:nth-of-type(1):before { content: "Date"; }
+    td:nth-of-type(9):before { content: "Input Vertical1"; }
+    td:nth-of-type(10):before { content: "Input Vertical2"; }
+    td:nth-of-type(11):before { content: "Input Vertical3"; }
+    td:nth-of-type(12):before { content: "Output Vertical1";}
+    td:nth-of-type(13):before { content: "Output Vertical2"; }
+    td:nth-of-type(14):before { content: "Output Vertical3"; }
+    td:nth-of-type(15):before { content: "Diffrential Vertical1"; }
+    td:nth-of-type(16):before { content: "Diffrential Vertical2";}
+    td:nth-of-type(17):before { content: "Diffrential Vertical3";}
+  
+  }
